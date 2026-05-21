@@ -67,8 +67,16 @@ public class Assignment {
 
     // TODO: implement getSubmissionCount()
     // - return number of submissions
+    public int getSubmissionCount(){
+        return submissions.size();
+    }
 
     // TODO: override toString()
     // Example:
     // Assignment: OOP Project (100 Marks)
+
+    @Override
+    public String toString() {
+        return "Assignment:" + title + "(" + totalMarks + " Marks)";
+    }
 }
